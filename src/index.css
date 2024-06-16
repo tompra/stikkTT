@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*,
+::after,
+::before,
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 5rem);
+}
+
+h2 {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+}
+
+h3 {
+    font-size: clamp(1.25rem, 2.5vw, 2.5rem);
+}
+
+h4 {
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+
+h5 {
+    font-size: clamp(0.875rem, 1.5vw, 1.5rem);
+}
+
+/* .nav-container {
+    background-color: #5850ec;
+}
+.nav-center {
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+}
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-link {
+    color: #cddbfe;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    letter-spacing: 2px;
+}
+.nav-link:hover {
+    color: #362f78;
+    cursor: pointer;
+}
+.active {
+    color: #0e9f6e;
+    font-weight: 700;
+}
+@media (min-width: 768px) {
+    .nav-center {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-links {
+        flex-direction: row;
+        margin-top: 0;
+    }
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        background: #333;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: 0.5rem 1rem;
+        text-align: center;
+        width: 100%;
+    }
+} */
+.nav-container {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Mobile and Tablet Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        background: #333;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 250px;
+        transform: translateX(100%);
+        padding: 1rem;
+    }
+
+    .nav-links.open {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    .nav-link {
+        padding: 1rem;
+        text-align: right;
+        width: 100%;
+    }
+}
+
+/* Desktop Design */
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex !important;
+        transform: none !important;
+        position: static;
+        height: auto;
+        width: auto;
+        flex-direction: row;
+        padding: 0;
+    }
+}
