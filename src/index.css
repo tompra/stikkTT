@@ -7,7 +7,8 @@ html {
     margin: 0;
     padding: 0;
 }
-p {
+p,
+a {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
@@ -142,6 +143,9 @@ h5 {
     border: none;
     color: white;
     cursor: pointer;
+    position: absolute;
+    top: 20%;
+    right: 20%;
 }
 
 .nav-links {
@@ -156,7 +160,6 @@ h5 {
     font-size: 1rem;
 }
 
-/* Mobile and Tablet Design */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -168,7 +171,7 @@ h5 {
         gap: 0;
         background: #333;
         position: fixed;
-        top: 0;
+        top: 5%;
         right: 0;
         height: 100%;
         width: 250px;
@@ -183,7 +186,7 @@ h5 {
 
     .nav-link {
         padding: 1rem;
-        text-align: right;
+        text-align: left;
         width: 100%;
     }
 }

@@ -12,10 +12,10 @@ const Navbar: React.FC = (): JSX.Element => {
             <div className='nav-center'>
                 <h3 className='logo'>Stickithom</h3>
 
+                <button className='hamburger' onClick={toggleMenu}>
+                    {isOpen ? '✕' : '☰'}
+                </button>
                 <div className={`nav-links ${isOpen ? 'open' : ''}`}>
-                    <button className='hamburger' onClick={toggleMenu}>
-                        {isOpen ? '✕' : '☰'}
-                    </button>
                     <a className='nav-link'>Home</a>
                     <a className='nav-link'>Collection</a>
                     <a className='nav-link'>Contact</a>
