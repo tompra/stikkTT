@@ -54,18 +54,45 @@ h5 {
     grid-template-columns: repeat(12, 1fr);
     background: violet;
 }
+.home-content {
+    grid-column: 4 / 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.home-content__header {
+    border-bottom: #333 5px solid;
+}
+.home-content__footer {
+    border-top: #333 5px solid;
+}
+.home-content__header,
+.home-content__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    background-color: aliceblue;
+}
+.home-content__main {
+    flex-grow: 1;
+    background-color: cadetblue;
+}
 
 .sidebar-left {
     grid-column: 1 / 4;
     background-color: blue;
+    border-right: #333 5px solid;
 }
 .sidebar-right {
     grid-column: 10 / 13;
     background-color: chocolate;
+    border-left: #333 5px solid;
 }
 .footer-container {
     height: 10%;
     background: goldenrod;
+    border-top: #333 5px solid;
 }
 
 .nav-container {
@@ -73,7 +100,7 @@ h5 {
     color: white;
     position: relative;
     padding: 0 1rem;
-    border-bottom: #333 2px solid;
+    border-bottom: #333 5px solid;
     height: 10%;
 }
 
