@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 const Navbar: React.FC = (): JSX.Element => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -16,10 +16,18 @@ const Navbar: React.FC = (): JSX.Element => {
                     {isOpen ? '✕' : '☰'}
                 </button>
                 <div className={`nav-links ${isOpen ? 'open' : ''}`}>
-                    <a className='nav-link'>Home</a>
-                    <a className='nav-link'>Collection</a>
-                    <a className='nav-link'>Contact</a>
-                    <a className='nav-link'>After Care</a>
+                    <Link to={'/'} className='nav-link'>
+                        Home
+                    </Link>
+                    <Link to={'/collections'} className='nav-link'>
+                        Collections
+                    </Link>
+                    <Link to={'/contact'} className='nav-link'>
+                        Contact
+                    </Link>
+                    <Link to={'/aftercare'} className='nav-link'>
+                        After Care
+                    </Link>
                 </div>
             </div>
         </nav>
