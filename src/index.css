@@ -43,87 +43,38 @@ h5 {
     font-size: clamp(0.875rem, 1.5vw, 1.5rem);
 }
 
-/* .nav-container {
-    background-color: #5850ec;
+.app-container {
+    height: 100vh;
+    max-height: 100vh;
+    background: yellowgreen;
 }
-.nav-center {
-    width: 90%;
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    padding: 1.5rem 2rem;
-}
-.nav-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    font-family: 'Roboto', sans-serif;
-}
-.hamburger {
-    display: none;
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
+.home-container {
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background: violet;
 }
 
-.nav-link {
-    color: #cddbfe;
-    padding: 0.5rem 0.5rem 0.5rem 0;
-    letter-spacing: 2px;
+.sidebar-left {
+    grid-column: 1 / 4;
+    background-color: blue;
 }
-.nav-link:hover {
-    color: #362f78;
-    cursor: pointer;
+.sidebar-right {
+    grid-column: 10 / 13;
+    background-color: chocolate;
 }
-.active {
-    color: #0e9f6e;
-    font-weight: 700;
+.footer-container {
+    height: 10%;
+    background: goldenrod;
 }
-@media (min-width: 768px) {
-    .nav-center {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .nav-links {
-        flex-direction: row;
-        margin-top: 0;
-    }
-    .hamburger {
-        display: block;
-    }
 
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        gap: 0;
-        background: #333;
-        position: absolute;
-        top: 4rem;
-        left: 0;
-        width: 100%;
-        padding: 1rem 0;
-    }
-
-    .nav-links.open {
-        display: flex;
-    }
-
-    .nav-link {
-        padding: 0.5rem 1rem;
-        text-align: center;
-        width: 100%;
-    }
-} */
 .nav-container {
-    background: #333;
+    background: #6875f5;
     color: white;
-    padding: 1rem;
     position: relative;
+    padding: 0 1rem;
+    border-bottom: #333 2px solid;
+    height: 10%;
 }
 
 .nav-center {
@@ -206,4 +157,9 @@ h5 {
         flex-direction: row;
         padding: 0;
     }
+}
+
+.nav-logo {
+    width: 6rem;
+    object-fit: contain;
 }

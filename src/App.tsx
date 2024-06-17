@@ -37,7 +37,7 @@ const router = createBrowserRouter([
 
 const App: React.FC = (): JSX.Element => {
     return (
-        <main>
+        <main className='app-container'>
             <RouterProvider router={router} />
         </main>
     );
