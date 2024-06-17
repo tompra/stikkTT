@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
 const Navbar: React.FC = (): JSX.Element => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -10,7 +11,11 @@ const Navbar: React.FC = (): JSX.Element => {
     return (
         <nav className='nav-container'>
             <div className='nav-center'>
-                <h3 className='logo'>Stickithom</h3>
+                <img
+                    src={logo}
+                    alt='S letter with a needle crossing'
+                    className='nav-logo'
+                />
 
                 <button className='hamburger' onClick={toggleMenu}>
                     {isOpen ? '✕' : '☰'}
