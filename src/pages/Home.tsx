@@ -1,22 +1,14 @@
-import Sidebar from '../components/Sidebar';
+import PageLayout from '../components/PageLayout';
 
 const Home: React.FC = (): JSX.Element => {
     return (
-        <section className='home-container'>
-            <Sidebar position='left' />
-            <div className='home-content'>
-                <div className='home-content__header'>
-                    <h3>THANK YOU TO BE HERE</h3>
-                </div>
-                <div className='home-content__main'>
-                    <h3>Content</h3>
-                </div>
-                <div className='home-content__footer'>
-                    <h3>STICKITHOM</h3>
-                </div>
-            </div>
-            <Sidebar position='right' />
-        </section>
+        <PageLayout
+            leftSidebarContent='sidebar left'
+            rightSidebarContent='sidebar right'
+            headerContent='THANK YOU FOR BEING HERE'
+            mainContent='Content from the props of the props'
+            footerContent='STICKITHOM'
+        />
     );
 };
 export default Home;
