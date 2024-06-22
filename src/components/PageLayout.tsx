@@ -1,7 +1,8 @@
 import Sidebar from '../components/Sidebar';
 import Content from '../components/Content';
+import { PageLayoutProps } from '../types';
 
-const PageLayout: React.FC = ({
+const PageLayout: React.FC<PageLayoutProps> = ({
     leftSidebarContent,
     rightSidebarContent,
     headerContent,
@@ -9,7 +10,7 @@ const PageLayout: React.FC = ({
     footerContent,
 }): JSX.Element => {
     return (
-        <section className='home-container'>
+        <section className='layout-container'>
             <Sidebar position='left' contentSidebar={leftSidebarContent} />
             <Content
                 header={headerContent}
