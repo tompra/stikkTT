@@ -8,13 +8,9 @@ const Content: React.FC<ContentProps> = ({
 }): JSX.Element => {
     return (
         <div className='home-content'>
-            <div className='home-content__header'>
-                <h3>{header}</h3>
-            </div>
+            <div className='home-content__header'>{header}</div>
             <div className='home-content__main'>{main}</div>
-            <div className='home-content__footer'>
-                <h3>{footer}</h3>
-            </div>
+            <div className='home-content__footer'>{footer}</div>
         </div>
     );
 };
