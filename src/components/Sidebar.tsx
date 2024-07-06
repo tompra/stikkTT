@@ -6,7 +6,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 }): JSX.Element => {
     return (
         <article className={`sidebar sidebar-${position}`}>
-            <h3>{contentSidebar}</h3>
+            {contentSidebar}
         </article>
     );
 };
