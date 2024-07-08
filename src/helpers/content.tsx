@@ -79,10 +79,60 @@ export const pagesContent = {
     },
     contact: {
         leftSidebar: (
-            <h3 style={{ color: 'greenyellow' }}>Left Side Bar in Object</h3>
+            <>
+                <h3>Do you want to get a tattoo?</h3>
+                <p>
+                    Initial consultation: send me an email to{' '}
+                    <a href='mailto: tomprayon@gmail.com'>
+                        tomprayon@gmail.com
+                    </a>{' '}
+                    so we can discuss the tattoo idea. We can tke this
+                    opportunity to understand your vision preferences and any
+                    specific details that you have in mind. Important
+                    information that you should include: placement, size, style
+                    and elements. In case, you have references please send them
+                    attached to the email.
+                </p>
+                <h3>Design Concept</h3>
+                <p>
+                    Based on the first consultation, I would create a design
+                    concept and proposal for the tattoo. I would send sketches,
+                    references images or digital mockups to visualize the
+                    design.
+                </p>
+                <h3>Feedback and Revision</h3>
+                <p>
+                    After sending the design concept, I would ask some feedback.
+                    After the consulate feedback I would created modifications
+                    on the design until you are satisfied and approved the final
+                    version.
+                </p>
+            </>
         ),
         rightSidebar: (
-            <h3 style={{ color: 'red' }}>Right Side Bar in Object</h3>
+            <>
+                <h3>Booking and Deposit</h3>
+                <p>
+                    Once the design is approved, we discuss scheduling and
+                    booking details with you. To secure the appointment I will
+                    ask for a small deposit and for covering the design creation
+                    process. In case of cancelation or rescheduling the deposit
+                    would not be refundable
+                </p>
+                <h3>Tattoo Session Day</h3>
+                <p>
+                    Before jumping on tattoing we can review together any
+                    last-minute detail to meet your expectations. Then we go
+                    all-in for the tattoo session. Always we open for any
+                    concerns or questions you may have.
+                </p>
+                <h3>Follow up</h3>
+                <p>
+                    If it's okay with you, after the tattoo healed I will ask
+                    you for a photo. Checking the healing progress and if you
+                    may have any future tattoo ideas.
+                </p>
+            </>
         ),
         headerContent: <h2>FOR GETTING SOME INK, CONTACT ME ;)</h2>,
         mainContent: (
