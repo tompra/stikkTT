@@ -2,7 +2,7 @@ import React from 'react';
 
 export interface SidebarProps {
     position: string;
-    contentSidebar: string;
+    contentSidebar: React.ReactNode | string;
 }
 
 export interface ContentProps {
