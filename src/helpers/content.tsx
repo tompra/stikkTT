@@ -1,16 +1,14 @@
 import logo from '../assets/me.jpg';
+import footerContent from '../assets/footerContent.png';
+import headerContent from '../assets/headerContent.png';
 
 const contentFooter = (
-    <div
-        style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            width: '100%',
-            margin: '0 1.2rem',
-        }}
-    >
-        <h2>I'M ━━━━━━━━━━━ </h2>
-        <h2>STICKITHOM</h2>
+    <div className='content-footer'>
+        <img
+            src={footerContent}
+            alt='Footer Text'
+            className='content--img__text'
+        />
     </div>
 );
 
@@ -68,7 +66,15 @@ export const pagesContent = {
                 </p>
             </>
         ),
-        headerContent: <h2>HI THERE, THANK YOU FOR BEING HERE</h2>,
+        headerContent: (
+            <div className='content-header'>
+                <img
+                    src={headerContent}
+                    alt='Header text'
+                    className='content--img__text'
+                />
+            </div>
+        ),
         mainContent: (
             <div
                 style={{
