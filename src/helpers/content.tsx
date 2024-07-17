@@ -5,8 +5,19 @@ import img0 from '../assets/img0.png';
 import img1 from '../assets/img1.png';
 import img2 from '../assets/img2.png';
 import img3 from '../assets/img3.png';
+import GifContact from '../components/GifContact';
 
 const images = [img0, img1, img2, img3];
+
+const contentHeader = (
+    <div className='content-header'>
+        <img
+            src={headerContent}
+            alt='Header text'
+            className='content--img__text'
+        />
+    </div>
+);
 
 const contentFooter = (
     <div className='content-footer'>
@@ -72,15 +83,7 @@ export const pagesContent = {
                 </p>
             </>
         ),
-        headerContent: (
-            <div className='content-header'>
-                <img
-                    src={headerContent}
-                    alt='Header text'
-                    className='content--img__text'
-                />
-            </div>
-        ),
+        headerContent: contentHeader,
         mainContent: (
             <div
                 style={{
@@ -158,12 +161,8 @@ export const pagesContent = {
                 </p>
             </>
         ),
-        headerContent: <h2>FOR GETTING SOME INK, CONTACT ME ;)</h2>,
-        mainContent: (
-            <>
-                <h1>For getting some ink, you can contact me </h1>
-            </>
-        ),
+        headerContent: contentHeader,
+        mainContent: <GifContact />,
         footerContent: contentFooter,
     },
     collection: {
@@ -192,20 +191,262 @@ export const pagesContent = {
                 <h3>Information about the clicked image</h3>
             </>
         ),
-        headerContent: (
-            <div className='content-header'>
-                <img
-                    src={headerContent}
-                    alt='Header text'
-                    className='content--img__text'
-                />
-            </div>
-        ),
+        headerContent: contentHeader,
         mainContent: (
             <div className='content-collection'>
                 {images.map((img, idx) => (
                     <img src={img} alt={`Image Collection ${idx}`} key={idx} />
                 ))}
+            </div>
+        ),
+        footerContent: contentFooter,
+    },
+    aftercare: {
+        leftSidebar: (
+            <>
+                <h3>Pre-Tattoo Preparation</h3>
+                <ol>
+                    <li>
+                        <b>Hydration:</b> Drink plenty of water in the days
+                        leading up your tattoo appointment. Well-hydrated skin
+                        is more resilient and accepts ink better.
+                    </li>
+                    <li>
+                        <b>Avoid Alcohol and Caffeine:</b> These can thin your
+                        blood and make the tattoing process more difficult.
+                    </li>
+                    <li>
+                        <b>Moisture:</b> Regularly moisturize the area to be
+                        tattooed for a week before your appointment, but avoid
+                        using lotions on the day of the session.
+                    </li>
+                    <li>
+                        <b>Rest:</b> Ensure you get good night sleep before your
+                        appointment to be relaxed and patient during the
+                        session.
+                    </li>
+                </ol>
+                <h3>Important Reminds for Customers</h3>
+                <ol>
+                    <li>
+                        <b>Patience is key:</b>Healing times vary from person to
+                        person. Typically, a tattoo takes about 2-4 weeks to
+                        heal on the surface, with deeper layers taking up to 3
+                        months.
+                    </li>
+                    <li>
+                        <b>Stay healthy:</b>Maintain a healthy lifestyle to
+                        support your body's natural healing processes.
+                    </li>
+                    <li>
+                        <b>Communicate:</b>If you experience any unusual
+                        symptoms or have concerns during the healing process,
+                        don't hesitate to reach out to your tattoo artist or a
+                        healthcare professional.
+                    </li>
+                </ol>
+            </>
+        ),
+        rightSidebar: (
+            <>
+                <h3>Long-Term Aftercare</h3>
+                <ol>
+                    <li>
+                        Hydrate and Moisturize:
+                        <ul>
+                            <li>
+                                Keep your skin hydrated by drinking water and
+                                regularly moisturizing the tattooed area, even
+                                after it's fully healed.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Sun Protection:
+                        <ul>
+                            <li>
+                                Continue to protect your tattoo from sun
+                                exposure with sunscreen to prevent fadin.g
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Avoid Harsh Chemicals:
+                        <ul>
+                            <li>
+                                Be mindful of using harsh chemical products on
+                                your tattoo. This includes certain exfoliants
+                                and strong scented lotions.
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h3>Common Concerns and Solutions</h3>
+
+                <ol>
+                    <li>
+                        Infection:
+                        <ul>
+                            <li>
+                                Signs: Redness extending beyond the tattoo,
+                                excessive swelling, pus, or a fever.
+                            </li>
+                            <li>
+                                Action: Consult a healthcare professional
+                                immediately.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Allergic Reactions:
+                        <ul>
+                            <li>
+                                Signs: Persistent redness, itching, or rashes.
+                            </li>
+                            <li>
+                                Action: Contact your tattoo artist and a
+                                healthcare professional. You might be allergic
+                                to the ink or aftercare products.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Touch-ups:
+                        <ul>
+                            <li>
+                                Over time, tattoos may fade or lose some of
+                                their detail.
+                            </li>
+                            <li>
+                                Consult your tattoo artist for touch ups. If you
+                                need a touch-up we can arrange for it.{' '}
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </>
+        ),
+        headerContent: contentHeader,
+        mainContent: (
+            <div
+                style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                }}
+            >
+                <h3>Immediate Aftercare - First Few Days</h3>
+                <ol>
+                    <li>
+                        Initial Bandage:
+                        <ul>
+                            <li>
+                                After applied protective bandage, leave it on
+                                for a few hours (2 to 4 hours)
+                            </li>
+                            <li>
+                                If using a medical adhesive bandage, remove
+                                timing should be 24 to 72hs.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        First Wash:
+                        <ul>
+                            <li>Wash your hands.</li>
+                            <li>Remove the bandage gently.</li>
+                            <li>
+                                Use lukewarm water and mild, unscented soap to
+                                gently wash off the plasma, blood and ink. Avoid
+                                scrubbing.
+                            </li>
+                            <li>
+                                Pat the area dry with a clean paper towel or let
+                                it air dry. Do not use cloth towels as they can
+                                harbor bacteria.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Moisturize:
+                        <ul>
+                            <li>
+                                Apply a thin layer of a tattoo aftercare
+                                ointment or fragrance-free moiusturizer.
+                            </li>
+                            <li>
+                                Do this 2-3 times a day for the first few days
+                                until the tattoo starts to dry out.
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3>Intermediate Care (First 2-3 Weeks)</h3>
+                <ol>
+                    <li>
+                        Keep it clean:
+                        <ul>
+                            <li>
+                                Wash the tattoo gently with mild soap and water
+                                twice a day.
+                            </li>
+                            <li>
+                                Avoid soaking the tattoo in water. Showers are
+                                fine, but avoid baths, swimming pools, hot tubs,
+                                and ocean water.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Moisturize Regularly:
+                        <ul>
+                            <li>
+                                After washing, apply a fragrance-free
+                                moisturizer to keep the skin hydrated.
+                            </li>
+                            <li>
+                                Do not over-moisturize. A thin layer is
+                                sufficient to keep the tattoo from drying out.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Avoid Sun Exposure:
+                        <ul>
+                            <li>
+                                Keep your tattoo out of direct sunlight. UV rays
+                                can damage the healing skin and fade the tattoo.
+                            </li>
+                            <li>
+                                After the tattoo has fully healed, always use
+                                high SPF sunscreen when exposed to the sun.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Clothing:
+                        <ul>
+                            <li>
+                                Wear loose-fitting, clean clothing over the
+                                tattooed area to avoid irritation and allow your
+                                skin to breathe
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Do NOT Pick or Scratch:
+                        <ul>
+                            <li>
+                                As your tattoo heals, it will start to scab and
+                                peel. This is normal.
+                            </li>
+                            <li>
+                                Do not pick at the scabs or scratch the peeling
+                                skin.
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
             </div>
         ),
         footerContent: contentFooter,
