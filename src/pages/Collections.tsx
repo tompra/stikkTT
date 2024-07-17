@@ -1,13 +1,14 @@
 import PageLayout from '../components/PageLayout';
+import { pagesContent } from '../helpers/content';
 
 const Collections: React.FC = (): JSX.Element => {
     return (
         <PageLayout
-            leftSidebarContent='sidebar left collections'
-            rightSidebarContent='sidebar right collections'
-            headerContent='THANK YOU FOR BEING HERE'
-            mainContent='Content from the props of the props for collections'
-            footerContent='STICKITHOM'
+            leftSidebarContent={pagesContent.collection.leftSidebar}
+            rightSidebarContent={pagesContent.collection.rightSidebar}
+            headerContent={pagesContent.collection.headerContent}
+            mainContent={pagesContent.collection.mainContent}
+            footerContent={pagesContent.collection.footerContent}
         />
     );
 };
