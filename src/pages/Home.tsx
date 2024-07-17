@@ -4,11 +4,11 @@ import { pagesContent } from '../helpers/content';
 const Home: React.FC = (): JSX.Element => {
     return (
         <PageLayout
-            leftSidebarContent={pagesContent.collection.leftSidebar}
-            rightSidebarContent={pagesContent.collection.rightSidebar}
-            headerContent={pagesContent.collection.headerContent}
-            mainContent={pagesContent.collection.mainContent}
-            footerContent={pagesContent.collection.footerContent}
+            leftSidebarContent={pagesContent.home.leftSidebar}
+            rightSidebarContent={pagesContent.home.rightSidebar}
+            headerContent={pagesContent.home.headerContent}
+            mainContent={pagesContent.home.mainContent}
+            footerContent={pagesContent.home.footerContent}
         />
     );
 };
