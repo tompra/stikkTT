@@ -72,6 +72,7 @@ h5 {
     background-color: cadetblue;
     overflow-y: auto;
     scrollbar-width: none;
+    position: relative;
 }
 
 .content-header,
@@ -84,12 +85,17 @@ h5 {
 }
 .content-collection {
     flex-direction: column;
+    position: absolute;
+    top: 0%;
 }
 .content-collection img {
-    width: 50%;
+    width: 45%;
     height: auto;
     object-fit: cover;
     margin: 10px;
+}
+.content-collection img:hover {
+    border: 5px solid black;
 }
 .content--img__text {
     width: 100%;
@@ -146,6 +152,11 @@ h5 {
     text-decoration: none;
     color: white;
     font-size: 1rem;
+}
+
+.tenor-gif-embed {
+    pointer-events: none;
+    transition: none;
 }
 
 @media (max-width: 768px) {
