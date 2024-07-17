@@ -1,12 +1,13 @@
 import PageLayout from '../components/PageLayout';
+import { pagesContent } from '../helpers/content';
 const Aftercare: React.FC = (): JSX.Element => {
     return (
         <PageLayout
-            leftSidebarContent='sidebar left aftercare'
-            rightSidebarContent='sidebar right aftercare'
-            headerContent='THANK YOU FOR BEING HERE'
-            mainContent='Content from the props of the props for aftercare'
-            footerContent='STICKITHOM'
+            leftSidebarContent={pagesContent.aftercare.leftSidebar}
+            rightSidebarContent={pagesContent.aftercare.rightSidebar}
+            headerContent={pagesContent.aftercare.headerContent}
+            mainContent={pagesContent.aftercare.mainContent}
+            footerContent={pagesContent.aftercare.footerContent}
         />
     );
 };
