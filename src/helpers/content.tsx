@@ -1,6 +1,12 @@
 import logo from '../assets/me.jpg';
 import footerContent from '../assets/footerContent.png';
 import headerContent from '../assets/headerContent.png';
+import img0 from '../assets/img0.png';
+import img1 from '../assets/img1.png';
+import img2 from '../assets/img2.png';
+import img3 from '../assets/img3.png';
+
+const images = [img0, img1, img2, img3];
 
 const contentFooter = (
     <div className='content-footer'>
@@ -157,6 +163,50 @@ export const pagesContent = {
             <>
                 <h1>For getting some ink, you can contact me </h1>
             </>
+        ),
+        footerContent: contentFooter,
+    },
+    collection: {
+        leftSidebar: (
+            <>
+                <h2>[COLLECTION]</h2>
+                <div>
+                    <h4>Designs made</h4>
+                    <h5>20</h5>
+                </div>
+                <div>
+                    <h3>Click to see more details</h3>
+                </div>
+                <div>
+                    <h3>[TOOLS]</h3>
+                    <ul>
+                        <li>Procreate</li>
+                        <li>Photoshop</li>
+                        <li>Pencil & Paper</li>
+                    </ul>
+                </div>
+            </>
+        ),
+        rightSidebar: (
+            <>
+                <h3>Information about the clicked image</h3>
+            </>
+        ),
+        headerContent: (
+            <div className='content-header'>
+                <img
+                    src={headerContent}
+                    alt='Header text'
+                    className='content--img__text'
+                />
+            </div>
+        ),
+        mainContent: (
+            <div className='content-collection'>
+                {images.map((img, idx) => (
+                    <img src={img} alt={`Image Collection ${idx}`} key={idx} />
+                ))}
+            </div>
         ),
         footerContent: contentFooter,
     },
